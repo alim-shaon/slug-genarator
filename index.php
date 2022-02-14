@@ -54,7 +54,7 @@ else if ((isset($_POST["clear"])) && ($_POST["clear"] == "CLEAR")) {
 </head>
 <body>
     <section class="container my-5">
-        <h2 class="py-4 text-center">Welcome to Slug Genarator</h2>
+        <h2 class="py-4 text-center">Welcome to Slug Generator</h2>
         <form action="index.php" method="post">
 
             <input type="text" class="form-control my-3" name="slugInput" placeholder="Please Input Text">
@@ -82,11 +82,11 @@ else if ((isset($_POST["clear"])) && ($_POST["clear"] == "CLEAR")) {
         </form>
     </section>
 
-    <!-- section to show Genarated slug -->
+    <!-- section to show Generated slug -->
     <section class="container">
         <?php if ((isset($generate_slug)) && ($_POST["slugInput"] != "")) {?>
             <div class="my-4 py-4 border border-2">
-                <h2 class="text-center py-3">Genarated Slug</h2>
+                <h2 class="text-center py-3">Generated Slug</h2>
                 <input id="slug" class="form-control text-center" type="text" value=<?php echo "{$generate_slug}" ?> aria-label="Disabled input example" disabled readonly>
                 <div class="container my-4 row g-2 px-0">
                     <button class="col-12 mx-1 btn btn-outline-primary fw-bold" onclick="copyFunction()"><img src="copy-icon.png" alt=""> COPY</button>
